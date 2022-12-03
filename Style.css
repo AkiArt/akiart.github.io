@@ -1,0 +1,544 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5em;
+    background-color: #c7a26c;
+}
+
+#site_wrap{
+    background-color: #c7a26c;
+    height:984px;
+    display: grid;
+    grid-template-columns: 
+    1fr 
+  repeat(4,minmax(0,315px))
+    1fr
+    ;
+    grid-template-rows: 
+    174px
+    616px
+    194px;
+    grid-template-areas: "header header header header header header"
+    ". welcome_image welcome_image welcome_image welcome_image ."
+    ". . content content content .";
+}
+
+#site_wrap_a{
+    background-color: #c7a26c;
+    height:704px;
+    display: grid;
+    grid-template-columns: 
+    1fr 
+  repeat(4,minmax(0,315px))
+    1fr
+    ;
+    grid-template-rows: 
+    174px
+    530px;
+    grid-template-areas: "header header header header header header"
+    ". profile_picture content_about content_about content_about .";
+}
+
+#site_wrap_p{
+    background-color: #c7a26c;
+    height:704px;
+    display: grid;
+    grid-template-columns: 
+    1fr 
+  repeat(4,minmax(0,315px))
+    1fr
+    ;
+    grid-template-rows: 
+    174px
+    530px;
+    grid-template-areas: "header header header header header header"
+    ". portfolio1 portfolio1 port-info1 port-info1 ."
+    ". port-info2 port-info2 portfolio2 portfolio2 ."
+    ". portfolio3 portfolio3 port-info3 port-info3 ."
+    ". port-info4 port-info4 portfolio4 portfolio4 ."
+    ". portfolio5 portfolio5 port-info5 port-info5 ."
+    ". port-info6 port-info6 portfolio6 portfolio6 ."
+    ". portfolio7 portfolio7 port-info7 port-info7 ."
+    ". port-info8 port-info8 portfolio8 portfolio8 ."
+    ". portfolio9 portfolio9 port-info9 port-info9 ."
+    ". port-info10 port-info10 portfolio10 portfolio10 ."
+    ". portfolio11 portfolio11 port-info11 port-info11 ."
+    ". port-info12 port-info12 portfolio12 portfolio12 ."
+    ". . links links . .";
+}
+
+#site_wrap_comm{
+    background-color: #c7a26c;
+    height:704px;
+    display: grid;
+    grid-template-columns: 
+    1fr 
+  repeat(4,minmax(0,315px))
+    1fr
+    ;
+    grid-template-rows: 
+    174px
+    530px;
+    grid-template-areas: "header header header header header header"
+    ". commpic commpic commprice commprice .";
+}
+
+#site_wrap_cont{
+    background-color: #c7a26c;
+    height:704px;
+    display: grid;
+    grid-template-columns: 
+    1fr 
+  repeat(4,minmax(0,315px))
+    1fr
+    ;
+    grid-template-rows: 
+    174px
+    530px;
+    grid-template-areas: "header header header header header header"
+    ". logocon logocon contact contact .";
+}
+
+.header{
+    background-color: #966d9d;
+    grid-area:header;
+}
+
+.headerwrap{
+    max-width: 1260px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.header .nav{
+    list-style: none;
+    padding:0;
+    display:flex;
+}
+
+.header .nav a{
+    text-decoration: none;
+    background-color: #4F005B;
+    border-radius:50em;
+    color: white;
+    padding:12px 12px;
+    margin:0 25px;
+    display: inline-block;
+}
+
+.header .nav li a:hover, .header .nav li a.active{
+    background-color: #CD810E;
+    color: white
+}
+
+.welcome_image{
+    grid-area: welcome_image
+}
+
+.content{
+    grid-area: content
+}
+
+.profile_picture{
+    padding:2em 0;
+    grid-area: profile_picture
+}
+
+.content_about{
+    padding:2em 0;
+    grid-area: content_about
+}
+
+.port-img1 {
+    width: 464px;
+    height: 500px;
+    border: 3px solid rgb(79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio1;
+}
+
+.port-info1{
+    padding: 200px;
+    grid-area: port-info1;
+    float: right;
+}
+
+.port-img2{
+    width: 338px;
+    height: 500px;
+    border: 3px solid rgb (79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio2;
+    vertical-align: middle;
+}
+
+.port-info2 {
+    padding: 200px;
+    grid-area: port-info2;
+    float: left;
+}
+
+.port-img3 {
+    width: 500px;
+    height: 500px;
+    border: 3px solid rgb(79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio3;
+}
+
+.port-info3{
+    padding: 200px;
+    grid-area: port-info3;
+    float: right;
+}
+
+.port-img4{
+    width: 500px;
+    height: 352px;
+    border: 3px solid rgb (79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio4;
+    vertical-align: middle;
+}
+
+.port-info4 {
+    padding: 200px;
+    grid-area: port-info4;
+    float: left;
+}
+
+.port-img5 {
+    width: 500px;
+    height: 333px;
+    border: 3px solid rgb(79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio5;
+}
+
+.port-info5{
+    padding: 200px;
+    grid-area: port-info5;
+    float: right;
+}
+
+.port-img6{
+    width: 375px;
+    height: 500px;
+    border: 3px solid rgb (79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio6;
+    vertical-align: middle;
+}
+
+.port-info6 {
+    padding: 200px;
+    grid-area: port-info6;
+    float: left;
+}
+
+.port-img7 {
+    width: 500px;
+    height: 375px;
+    border: 3px solid rgb(79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio7;
+}
+
+.port-info7{
+    padding: 200px;
+    grid-area: port-info7;
+    float: right;
+}
+
+.port-img8{
+    width: 375px;
+    height: 500px;
+    border: 3px solid rgb (79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio8;
+    vertical-align: middle;
+}
+
+.port-info8 {
+    padding: 200px;
+    grid-area: port-info8;
+    float: left;
+}
+
+.port-img9 {
+    width: 470px;
+    height: 500px;
+    border: 3px solid rgb(79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio9;
+}
+
+.port-info9{
+    padding: 200px;
+    grid-area: port-info9;
+    float: right;
+}
+
+.port-img10{
+    width: 403px;
+    height: 500px;
+    border: 3px solid rgb (79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio10;
+    vertical-align: middle;
+}
+
+.port-info10 {
+    padding: 200px;
+    grid-area: port-info10;
+    float: left;
+}
+
+.port-img11 {
+    width: 500px;
+    height: 375px;
+    border: 3px solid rgb(79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio11;
+}
+
+.port-info11{
+    padding: 200px;
+    grid-area: port-info11;
+    float: right;
+}
+
+.port-img12{
+    width: 375px;
+    height: 500px;
+    border: 3px solid rgb (79, 38, 63);
+    background: rgb(129, 81, 123);
+    margin: auto;
+    padding: 10px 10px;
+    grid-area: portfolio12;
+    vertical-align: middle;
+}
+
+.port-info12 {
+    padding: 200px;
+    grid-area: port-info12;
+    float: left;
+}
+
+.links {
+    grid-area: links;
+    vertical-align: middle;
+}
+
+.commpic {
+    padding: 200px;
+    float: left;
+    grid-area: commpic;
+}
+
+.commissionprices {
+    padding: 200px;
+    grid-area: commprice;
+    float: right;
+}
+
+.logocon {
+    padding: 200px;
+    grid-area: logocon;
+}
+
+.contact {
+    padding: 200px;
+    grid-area: contact;
+}
+
+@media screen and (max-width: 480px){
+    #site_wrap{
+        grid-template-rows: 
+         min-content
+         min-content
+         min-content;
+        grid-template-areas: "header header header header header header"
+        "content content content content content content";
+    }
+    .welcome_image{
+        display: none;
+    }
+    .header .nav{
+        list-style: none;
+        padding:0;
+        display:flex;
+        flex-direction: column;
+    }
+    .header .nav a{
+        margin: .5em;
+    }
+    .headerwrap img{
+        display: none;
+    }
+
+    #site_wrap_a{
+        grid-template-rows: 
+        min-content
+        min-content;
+        grid-template-areas: "header header header header header header"
+        ". profile_picture profile_picture . . ."
+        ". content_about content_about content_about content_about .";
+    }
+
+    #site_wrap_p{
+        grid-template-rows: 
+        min-content
+        min-content;
+        grid-template-areas: "header header header header header header"
+        ". portfolio1 portfolio1 portfolio1 portfolio1 ."
+        ". port-info1 port-info1 port-info1 port-info1 ."
+        ". portfolio2 portfolio2 portfolio2 portfolio2 ."
+        ". port-info2 port-info2 port-info2 port-info2 ."
+        ". portfolio3 portfolio3 portfolio3 portfolio3 ."
+        ". port-info3 port-info3 port-info3 port-info3 ."
+        ". portfolio4 portfolio4 portfolio4 portfolio4 ."
+        ". port-info4 port-info4 port-info4 port-info4 ."
+        ". portfolio5 portfolio5 portfolio5 portfolio5 ."
+        ". port-info5 port-info5 port-info5 port-info5 ."
+        ". portfolio6 portfolio6 portfolio6 portfolio6 ."
+        ". port-info6 port-info6 port-info6 port-info6 ."
+        ". portfolio7 portfolio7 portfolio7 portfolio7 ."
+        ". port-info7 port-info7 port-info7 port-info7 ."
+        ". portfolio8 portfolio8 portfolio8 portfolio8 ."
+        ". port-info8 port-info8 port-info8 port-info8 ."
+        ". portfolio9 portfolio9 portfolio9 portfolio9 ."
+        ". port-info9 port-info9 port-info9 port-info9 ."
+        ". portfolio10 portfolio10 portfolio10 portfolio10 ."
+        ". port-info10 port-info10 port-info10 port-info10 ."
+        ". portfolio11 portfolio11 portfolio11 portfolio11 ."
+        ". port-info11 port-info11 port-info11 port-info11 ."
+        ". portfolio12 portfolio12 portfolio12 portfolio12 ."
+        ". port-info12 port-info12 port-info12 port-info12 ."
+        ". . links links . .";
+    }
+
+    .port-info1{
+        padding: 25px;
+        grid-area: port-info1;
+    }
+    
+ .port-info2 {
+        padding: 25px;
+        grid-area: port-info2;
+    }
+    
+    .port-info3{
+        padding: 25px;
+        grid-area: port-info3;
+    }
+    
+    .port-info4 {
+        padding: 25px;
+        grid-area: port-info4;
+    }
+    
+    .port-info5{
+        padding: 25px;
+        grid-area: port-info5;
+    }
+
+    .port-info6 {
+        padding: 25px;
+        grid-area: port-info6;
+    }
+
+    .port-info7{
+        padding: 25px;
+        grid-area: port-info7;
+    }
+
+    .port-info8 {
+        padding: 25px;
+        grid-area: port-info8;
+    }
+
+    .port-info9{
+        padding: 25px;
+        grid-area: port-info9;
+    }
+
+    .port-info10 {
+        padding: 25px;
+        grid-area: port-info10;
+    }
+
+    .port-info11{
+        padding: 25px;
+        grid-area: port-info11;
+    }
+    
+    .port-info12 {
+        padding: 25px;
+        grid-area: port-info12;
+    }
+
+    #site_wrap_comm{
+        grid-template-rows: 
+        min-content
+        min-content;
+        grid-template-areas: "header header header header header header"
+        ". commpic commpic commpic commpic ."
+        ". commprice commprice commprice commprice .";
+    }
+
+    .commpic {
+        padding: 5px;
+        grid-area: commpic;
+    }
+
+    .commissionprices {
+        padding: 25px;
+        grid-area: commprice;
+    }
+
+    #site_wrap_cont{
+        grid-template-rows: 
+        min-content
+        min-content;
+        grid-template-areas: "header header header header header header"
+        ". logocon logocon logocon logocon ."
+        ". contact contact contact contact .";
+    }
+
+    .logocon {
+        padding: 25px;
+        grid-area: logocon;
+    }
+    
+    .contact {
+        padding: 25px;
+        grid-area: contact;
+    }
+
+    }
